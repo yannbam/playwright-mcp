@@ -29,7 +29,7 @@ import { console as consoleResource } from './resources/console';
 import type { Tool, ToolCapability } from './tools/tool';
 import type { Resource } from './resources/resource';
 import type { Server } from '@modelcontextprotocol/sdk/server/index.js';
-import type { LaunchOptions } from 'playwright';
+import type { LaunchOptions } from 'patchright';
 
 const snapshotTools: Tool[] = [
   ...common(true),

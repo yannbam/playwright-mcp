@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { chromium } from 'playwright';
+import { chromium } from 'patchright';
 
 import { test, expect } from './fixtures';
 

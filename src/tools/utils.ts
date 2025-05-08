@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import type * as playwright from 'playwright';
+import type * as playwright from 'patchright';
 
 export async function waitForCompletion<R>(page: playwright.Page, callback: () => Promise<R>): Promise<R> {
   const requests = new Set<playwright.Request>();

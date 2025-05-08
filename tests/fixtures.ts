@@ -15,9 +15,9 @@
  */
 
 import path from 'path';
-import { chromium } from 'playwright';
+import { chromium } from 'patchright';
 
-import { test as baseTest, expect as baseExpect } from '@playwright/test';
+import { test as baseTest, expect as baseExpect } from '@patchright/test';
 import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { spawn } from 'child_process';

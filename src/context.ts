@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import * as playwright from 'playwright';
+import * as playwright from 'patchright';
 import yaml from 'yaml';
 
 import { waitForCompletion } from './tools/utils';
@@ -192,7 +192,7 @@ class Tab {
     page.on('close', () => this._onClose());
     page.on('filechooser', chooser => this._fileChooser = chooser);
     page.setDefaultNavigationTimeout(60000);
-    page.setDefaultTimeout(5000);
+    page.setDefaultTimeout(10000);
   }
 
   private _onClose() {
@@ -204,7 +204,7 @@ class Tab {
   async navigate(url: string) {
     await this.page.goto(url, { waitUntil: 'domcontentloaded' });
     // Cap load event to 5 seconds, the page is operational at this point.
-    await this.page.waitForLoadState('load', { timeout: 5000 }).catch(() => {});
+    await this.page.waitForLoadState('load', { timeout: 10000 }).catch(() => {});
   }
 
   async run(callback: (tab: Tab) => Promise<void | string>, options?: RunOptions): Promise<ToolResult> {

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-import type { LaunchOptions } from 'playwright';
+import type { LaunchOptions } from 'patchright';
 import type { Server } from '@modelcontextprotocol/sdk/server/index.js';
 
 type ToolCapability = 'core' | 'tabs' | 'pdf' | 'history' | 'wait' | 'files' | 'install';

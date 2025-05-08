@@ -27,7 +27,7 @@ import { SSEServerTransport } from '@modelcontextprotocol/sdk/server/sse.js';
 import { createServer } from './index';
 import { ServerList } from './server';
 
-import type { LaunchOptions } from 'playwright';
+import type { LaunchOptions } from 'patchright';
 import assert from 'assert';
 import { ToolCapability } from './tools/tool';
 

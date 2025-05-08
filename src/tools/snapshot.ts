@@ -17,7 +17,7 @@
 import { z } from 'zod';
 import zodToJsonSchema from 'zod-to-json-schema';
 
-import type * as playwright from 'playwright';
+import type * as playwright from 'patchright';
 import type { Tool } from './tool';
 import { generateLocator } from '../context';
 import * as javascript from '../javascript';
